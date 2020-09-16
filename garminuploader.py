@@ -49,8 +49,8 @@ class garminUploader(object):
 
         options = webdriver.ChromeOptions()
         options.add_argument('--ignore-certificate-errors')
-        # options.add_argument('--incognito')
-        # options.add_argument('--headless')
+        options.add_argument('--incognito')
+        options.add_argument('--headless')
         options.add_argument("--window-size=1920x1080")
         options.add_argument("--disable-notifications")
         self.driver = webdriver.Chrome(
