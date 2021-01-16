@@ -10,7 +10,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from seleniumrequests import Chrome
+# from seleniumrequests import Chrome
 
 JS_DROP_FILE = """
         var target = arguments[0],

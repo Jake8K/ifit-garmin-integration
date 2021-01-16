@@ -9,14 +9,16 @@ if __name__ == "__main__":
 
     # get workout csv files
     scraper = ifitScraper(debug=True, dl_dir=dl_dir)
-    scraper.find_and_download_csv_files()  # TODO: add pagination, latest, and date ranges
-
-    # transform csv files into tcx files
-    # TODO: make tcx -> csv converter class
+    # scraper.find_and_download_csv_files()  # TODO: add pagination, latest, and date ranges
+    #
+    # # transform csv files into tcx files
+    # # TODO: make tcx -> csv converter class
+    # scraper.find_and_download_tcx_files()
+    scraper.fix_tcx(fp="sandbox/2020_11_04_09_11_Manual_Workout.tcx")
 
     # upload to garmin connect
-    garmin = garminUploader(debug=True)
-    garmin.drag_and_drop_file(ul_dir)
+    # garmin = garminUploader(debug=True)
+    # garmin.drag_and_drop_file(ul_dir)
 
     scraper.finish()
-    garmin.finish()
+    # garmin.finish()

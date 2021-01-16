@@ -2,5 +2,6 @@
 credentials/
 garmin_captures/
 ifit_captures/
+sandbox/
 venv
 venv3
